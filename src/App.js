@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ProfileCard from './Components/ProfileCard';
-import About from './page/About';
+import AppRoutes from './Routes'; // Ajuste o nome do arquivo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import './assets/styles.css';
@@ -17,10 +18,17 @@ function App() {
       <button className="toggle-theme-btn" onClick={toggleBackgroundColor}>
         <FontAwesomeIcon icon={isDay ? faMoon : faSun} />
       </button>
-      <div className="container">
-        <ProfileCard />
-        <About />
-      </div>
+      
+      <Router>
+        <div className="container">
+          <ProfileCard />
+          
+          <div className="page-content">
+            <AppRoutes />
+          </div>
+        
+        </div>
+      </Router>
     </div>
   );
 }

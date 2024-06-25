@@ -34,7 +34,7 @@ body {
 }
 
 .toggle-theme-btn {
-  background: var(--dark-magenta);
+  background:black;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -125,6 +125,11 @@ body {
   width: 100%;
 }
 
+.profile-nav .active {
+  font-weight: bold;
+  color: var(--purple);
+}
+
 .profile-card .profile-nav ul {
   list-style: none;
   padding: 0;
@@ -173,8 +178,9 @@ body {
   right: -50%;
   width: 45%;
   height: 3px;
-  background: linear-gradient(45deg, #f64c57, #e21b5a);
+  /* background: linear-gradient(45deg, #f64c57, #e21b5a); */
 }
+
 
 .about h2 {
   color: #f2f2f2;
@@ -260,4 +266,78 @@ body {
   .about h2 {
     font-size: 1.5rem;
   }
+}
+
+.about .education-history {
+  margin-top: 40px;
+}
+
+.about .education-history h2 {
+  border-bottom: 2px solid var(--purple);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about .education-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about .education-history li {
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.about .education-history li h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: white;
+}
+
+.about .education-history li p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+/* .about .profissional-history {
+  margin-top: 40px;
+}
+
+.about .profissional-history h2 {
+  border-bottom: 2px solid var(--purple);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about .profissional-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about .profissional-history li {
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.about .profissional-history li h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: white;
+}
+
+.about .profissional-history li p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+} */
+
+.about .about-me-history {
+  margin-top: 40px;
+}
+
+.about .about-me-history h2 {
+  border-bottom: 2px solid var(--purple);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
