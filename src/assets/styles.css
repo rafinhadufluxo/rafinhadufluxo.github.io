@@ -9,6 +9,8 @@
   --dark-magenta: #e21b5a;
   --light-green: #61e2c2;
   --light-purple: #d9abff;
+  --classic :#111827;
+  
 }
 
 * {
@@ -33,23 +35,29 @@ body {
   position: relative;
 }
 
-.toggle-theme-btn {
-  background:black;
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.toggle-theme-btn,
+.toggle-language-btn {
+  background: black; /* ou outra cor desejada */
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.5rem;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  margin-left: 10px; /* Espaçamento entre os botões */
 }
 
-.toggle-theme-btn:hover {
-  background: var(--dark-pink);
+.toggle-theme-btn:hover,
+.toggle-language-btn:hover {
+  background: var(--dark-pink); /* Cor de destaque ao passar o mouse */
 }
-
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -154,13 +162,18 @@ body {
 }
 
 .profile-card .download-btn {
-  background: linear-gradient(45deg, #f64c57, #e21b5a);
+  /* background: linear-gradient(45deg, #f64c57, #e21b5a); */
   color: #fff;
   padding: 1rem 3rem;
   border-radius: 30px;
   margin-top: 1.5rem;
   border: none;
   cursor: pointer;
+  background-color: forestgreen;
+}
+
+.profile-card .download-btn:hover {
+  background-color: brown; /* Cor muda para vermelho ao passar o mouse */
 }
 
 .about h1 {

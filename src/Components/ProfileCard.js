@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SocialLink from './SocialLink';
-import avatar from './../assets/img/avatar.webp';
+import avatar from './../assets/img/img_rafa2.jpg';
 
 const ProfileCard = () => {
   return (
@@ -22,15 +22,15 @@ const ProfileCard = () => {
         </div>
         <nav className="profile-nav">
           <ul>
-            <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
-            <li><NavLink to="/blog" activeClassName="active">Blog</NavLink></li>
-            <li><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></li>
-            <li><NavLink to="/academic" activeClassName="active">Academic</NavLink></li>
+            <li><NavLink to="/about" activeClassName="active">&#x1F4C4; About</NavLink></li>
+            <li><NavLink to="/blog" activeClassName="active">&#x1F30D; Blog</NavLink></li>
+            <li><NavLink to="/portfolio" activeClassName="active">&#x1F4C1; Portfolio</NavLink></li>
+            <li><NavLink to="/academic" activeClassName="active">&#x1F393; Academic</NavLink></li>
           </ul>
         </nav>
-        <button className="download-btn">
+       {/*  <button className="download-btn">
           <i className="fa fa-download"></i> Download CV
-        </button>
+        </button> */}
       </div>
     </div>
   );
