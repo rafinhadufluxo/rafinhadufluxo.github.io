@@ -33,6 +33,7 @@ function App() {
   };
 
   return (
+    
     <div className="app-container" style={{ backgroundColor: 'rgb(17, 24, 39)', background: isDay ? 'linear-gradient(45deg, var(--purple), var(--purple-light))' : 'linear-gradient(45deg, var(--classic), var(--classic))' }}>
 
       <div className="button-container">
@@ -45,7 +46,7 @@ function App() {
         </button>
       </div>
 
-      <Router>
+      <Router basename="/rafinhadufluxo.github.io">
         <div className="container">
           <ProfileCard />
           
