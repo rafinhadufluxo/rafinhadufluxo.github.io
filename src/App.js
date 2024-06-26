@@ -33,7 +33,7 @@ function App() {
   };
 
   return (
-    
+
     <div className="app-container" style={{ backgroundColor: 'rgb(17, 24, 39)', background: isDay ? 'linear-gradient(45deg, var(--purple), var(--purple-light))' : 'linear-gradient(45deg, var(--classic), var(--classic))' }}>
 
       <div className="button-container">
@@ -49,12 +49,12 @@ function App() {
       <Router basename="/rafinhadufluxo.github.io">
         <div className="container">
           <ProfileCard />
-          
+
           <div className="page-content">
             {/* Passa a variável de idioma para o componente AppRoutes */}
             <AppRoutes language={language} />
           </div>
-        
+
         </div>
       </Router>
     </div>
