@@ -46,7 +46,7 @@ function App() {
         </button>
       </div>
 
-      <Router basename="/rafinhadufluxo.github.io">
+      <Router basename='/'>
         <div className="container">
           <ProfileCard />
 
