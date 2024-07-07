@@ -18,14 +18,15 @@ const ProfileCard = () => {
             <SocialLink href="https://github.com/rafinhadufluxo" iconClass="fab fa-github" color="var(--dark-pink)" />
             <SocialLink href="https://www.linkedin.com/in/rafalup/" iconClass="fab fa-linkedin" color="var(--light-blue)" />
             <SocialLink href="https://www.lattes.cnpq.br/yourprofile" iconClass="fas fa-id-card" color="var(--light-purple)" title="cnpq lattes cv" />
+            <SocialLink href="https://medium.com/@rafinhadufluxo" iconClass="fab fa-medium" color="var(--light-purple)" title="medium blog" />
           </div>
         </div>
         <nav className="profile-nav">
           <ul>
-            <li><NavLink to="/about" activeClassName="active">&#x1F4C4; About</NavLink></li>
-            <li><NavLink to="/blog" activeClassName="active">&#x1F30D; Blog</NavLink></li>
-            <li><NavLink to="/portfolio" activeClassName="active">&#x1F4C1; Portfolio</NavLink></li>
-            <li><NavLink to="/academic" activeClassName="active">&#x1F393; Academic</NavLink></li>
+            <li><NavLink to="/about">&#x1F4C4; About</NavLink></li>
+            <li><NavLink to="/blog">&#x1F30D; Blog</NavLink></li>
+            <li><NavLink to="/portfolio">&#x1F4C1; Portfolio</NavLink></li>
+            <li><NavLink to="/academic">&#x1F393; Academic</NavLink></li>
           </ul>
         </nav>
        {/*  <button className="download-btn">
